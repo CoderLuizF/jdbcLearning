@@ -17,7 +17,7 @@ public class Program {
 			conn = DB.getConnection();
 			
 			st = conn.prepareStatement(
-					"DELETE FROM department "
+					"DELETE FROM seller "
 					+ "WHERE "
 					+ "Name = ?"
 					);
