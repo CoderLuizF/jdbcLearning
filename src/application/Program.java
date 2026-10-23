@@ -17,12 +17,12 @@ public class Program {
 			conn = DB.getConnection();
 			
 			st = conn.prepareStatement(
-					"DELETE FROM seller "
+					"DELETE FROM department "
 					+ "WHERE "
 					+ "Name = ?"
 					);
 			
-			st.setString(1, "Luiz Felipe");
+			st.setInt(1, 2);
 			
 			int rowsAffected = st.executeUpdate();
 			
