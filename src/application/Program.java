@@ -17,6 +17,8 @@ public class Program {
 		try {
 			conn = DB.getConnection();
 			
+			conn.setAutoCommit(false);
+			
 			st = conn.createStatement();
 			
 			int rows1 = st.executeUpdate("UPDATE seller SET BaseSalary = 2090 WHERE DepartmentId = 1");
