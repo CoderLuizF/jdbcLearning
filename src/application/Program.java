@@ -30,6 +30,8 @@ public class Program {
 			
 			int rows2 = st.executeUpdate("UPDATE seller SET BaseSalary = 3090 WHERE DepartmentId = 2");
 			
+			conn.commit();
+			
 			System.out.println("rows1 = " + rows1);
 			System.out.println("rows2 = " + rows2);
 			
