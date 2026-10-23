@@ -19,7 +19,7 @@ public class Program {
 			st = conn.prepareStatement(
 					"DELETE FROM department "
 					+ "WHERE "
-					+ "Name = ?"
+					+ "Id = ?"
 					);
 			
 			st.setInt(1, 2);
